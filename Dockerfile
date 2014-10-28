@@ -22,7 +22,7 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 #RUN     update-alternatives --set java /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
 #RUN     update-alternatives --set javac /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/javac
 
-RUN     apt-get install -y bison g++-multilib git gperf libxml2-utils
+RUN     apt-get install -y bison g++-multilib git gperf libxml2-utils curl
 RUN     curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/local/bin/repo
 RUN     chmod +x /usr/local/bin/repo
 RUN     mkdir /working
