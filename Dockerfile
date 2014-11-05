@@ -32,7 +32,7 @@ RUN         echo "export VISIBLE=now" >> /etc/profile
 #WORKDIR     /working
 #RUN         repo init -u https://android.googlesource.com/platform/manifest
 #RUN         repo sync
-VOLUME      ["/data"]
+#VOLUME      ["/data"]
 
 EXPOSE      22
 CMD         ["/usr/sbin/sshd", "-D"]
